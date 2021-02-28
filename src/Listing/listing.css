@@ -1,0 +1,41 @@
+.row {
+  margin: 10px;
+}
+
+.col1 {
+  border: 2px solid red;
+}
+
+.col1 {
+  width: 20%;
+}
+
+.col2 {
+  width: 80%;
+}
+
+.hotelcardimg {
+  height: 200px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .col1 {
+    width: 100%;
+  }
+
+  .col2 {
+    width: 100%;
+  }
+
+  .hotelcardimg {
+    margin: auto;
+    height: 200px;
+    width: 300px;
+  }
+
+  #imgcard {
+    display: flex;
+    align-items: center;
+  }
+}
