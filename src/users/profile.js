@@ -1,5 +1,5 @@
 import React from "react";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 const userdeatailurl =
   "https://hotelappjwtlogin.herokuapp.com/api/auth/userInfo";
 

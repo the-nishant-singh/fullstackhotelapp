@@ -1,6 +1,6 @@
 import React from "react";
 import "./addbooking.css";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 const bookUrl = "https://hotelappjwtlogin.herokuapp.com/api/auth/addbooking";
 
 class BookTicket extends React.Component {

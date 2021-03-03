@@ -1,7 +1,7 @@
 import React from "react";
 import "./quickSearch.css";
 import { Link } from "react-router-dom";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 const tripurl = "https://developerfunnel.herokuapp.com/booking";
 
 class QuickSearch extends React.Component {

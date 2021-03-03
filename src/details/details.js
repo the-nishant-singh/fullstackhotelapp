@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 import "./details.css";
 import RoomTypeTags from "./roomtypetags";
 const hoteldet = "https://developerfunnel.herokuapp.com/hotelsdetails";

@@ -1,6 +1,6 @@
 import React from "react";
 import "./listing.css";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 const url = "https://developerfunnel.herokuapp.com/hotellist";
 
 class Listing extends React.Component {

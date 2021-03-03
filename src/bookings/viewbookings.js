@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Loader from "../../public/loader.svg";
+import Loader from "../loader.svg";
 import "./viewbookings.css";
 const url = "https://hotelappjwtlogin.herokuapp.com/api/auth/yourbookings";
 
