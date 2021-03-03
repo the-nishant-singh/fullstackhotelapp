@@ -25,7 +25,11 @@ class QuickSearch extends React.Component {
       let data = this.state.tripType;
       return data.map((item) => {
         return (
-          <Link to={`/list/${item.trip}`} key={item._id}>
+          <Link
+            to={`/list/${item.trip}`}
+            key={item._id}
+            style={{ color: "Black", textDecoration: "none" }}
+          >
             <div className="card" style={{ width: "80%" }}>
               <img src={item.image} className="card-img-top" alt="tripimages" />
               <div className="card-body">

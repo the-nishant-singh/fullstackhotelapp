@@ -48,7 +48,7 @@ class Search extends Component {
 
   handleHotel = (event) => {
     // this.props.history.push(`/details/${event.target.value}`);
-    console.log(this.props.history);
+    console.log(this.props);
   };
 
   render() {

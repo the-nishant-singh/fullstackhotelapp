@@ -1,5 +1,6 @@
 import React from "react";
 import { Link, withRouter } from "react-router-dom";
+import Render from "../users/conditionalRender";
 
 const Header = () => {
   return (
@@ -27,17 +28,8 @@ const Header = () => {
                   Home
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/bookings">
-                  Your Bokings
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link active" to="/profile">
-                  Profile
-                </Link>
-              </li>
             </ul>
+            <Render />
           </div>
         </div>
       </nav>

@@ -3,10 +3,6 @@
 }
 
 .col1 {
-  border: 2px solid red;
-}
-
-.col1 {
   width: 20%;
 }
 
@@ -17,6 +13,16 @@
 .hotelcardimg {
   height: 200px;
   width: 300px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+.priceandbutton {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 1024px) {

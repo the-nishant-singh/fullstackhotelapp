@@ -1,0 +1,18 @@
+#logincard {
+  padding: 10px;
+  width: 90vh;
+  margin: 10px;
+}
+
+.loginform {
+  margin-top: 40px;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-group,
+#loginbtn {
+  margin: 10px;
+}

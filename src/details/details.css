@@ -1,0 +1,14 @@
+.hoteldetails {
+  width: 90%;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tags {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}

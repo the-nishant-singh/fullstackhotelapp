@@ -1,0 +1,48 @@
+.table {
+  padding: 10px;
+  width: 95%;
+  margin: 10px;
+  margin: auto;
+}
+
+.Pending {
+  color: orange;
+}
+
+.Confirmed {
+  color: green;
+}
+
+.Cancelled {
+  color: red;
+}
+
+.column1 {
+  border: 2px solid red;
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  display: flex;
+  justify-content: space-around;
+}
+
+#all,
+#cnf,
+#can,
+#pen {
+  display: none;
+}
+
+#all1,
+#cnf1,
+#can1,
+#pen1 {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+input[type="radio"]:checked + label {
+  background-color: red;
+  color: white;
+}
