@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import "./search.css";
-import {withRouter} from "react-router-dom"
+import { withRouter } from "react-router-dom";
 const url = "https://developerfunnel.herokuapp.com/location";
 const hotelurl = "https://developerfunnel.herokuapp.com/hotels?city=";
-
 
 class Search extends Component {
   constructor() {
@@ -53,7 +52,6 @@ class Search extends Component {
   };
 
   render() {
-    console.log(">>>props>>", this.props);
     return (
       <div className="container">
         <div className="card bg-danger text-white" style={{ width: "80%" }}>
@@ -88,6 +86,10 @@ class Search extends Component {
       .catch((err) => {
         console.log(err);
       });
+
+    fetch("https://hotelappjwtlogin.herokuapp.com", {
+      method: "GET"
+    }).then((res) => console.log("app is working"));
   }
 }
 
