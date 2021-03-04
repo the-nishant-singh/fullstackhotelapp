@@ -9,6 +9,7 @@ import Details from "./details/details";
 import Login from "./users/login";
 import Register from "./users/register";
 import BookTicket from "./users/addbooking";
+import Admin from "./Admin/admin";
 
 const Routing = () => {
   return (
@@ -23,6 +24,7 @@ const Routing = () => {
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
         <Route path="/bookticket/:id" component={BookTicket} />
+        <Route path="/admin" component={Admin} />
       </Switch>
     </BrowserRouter>
   );

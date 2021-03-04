@@ -60,6 +60,7 @@ class Profile extends React.Component {
         this.setState({ userProfile: data });
         sessionStorage.setItem("email", data.email);
         sessionStorage.setItem("name", data.name);
+        sessionStorage.setItem("role", data.role);
       });
   }
 }

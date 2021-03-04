@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./search.css";
+import {withRouter} from "react-router-dom"
 const url = "https://developerfunnel.herokuapp.com/location";
 const hotelurl = "https://developerfunnel.herokuapp.com/hotels?city=";
+
 
 class Search extends Component {
   constructor() {
@@ -47,8 +49,7 @@ class Search extends Component {
   };
 
   handleHotel = (event) => {
-    // this.props.history.push(`/details/${event.target.value}`);
-    console.log(this.props);
+    this.props.history.push(`/details/${event.target.value}`);
   };
 
   render() {
@@ -90,4 +91,4 @@ class Search extends Component {
   }
 }
 
-export default Search;
+export default withRouter(Search);

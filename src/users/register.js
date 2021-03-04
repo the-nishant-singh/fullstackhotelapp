@@ -29,7 +29,6 @@ class Register extends React.Component {
   };
 
   registerHandler = () => {
-    console.log(this.state);
     if (!this.state.email || !this.state.password || !this.state.name) {
       this.setState({ err: "All feilds are required" });
     } else if (this.state.name.length < 3) {
