@@ -16,7 +16,6 @@ class Bookings extends Component {
   radioChangeHandler = (event) => {
     this.setState({ filterdata: "" });
     let word;
-    console.log(event.target.value);
     if (event.target.value === "1") {
       word = "yourbookings";
     } else if (event.target.value === "2") {
@@ -56,6 +55,7 @@ class Bookings extends Component {
                 name="bookfilter"
                 value="1"
                 onChange={this.radioChangeHandler}
+                defaultChecked
               />
               <label id="all1" htmlFor="all">
                 All

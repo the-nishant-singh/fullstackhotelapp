@@ -33,6 +33,8 @@ class Login extends React.Component {
       if (!validator.isEmail(this.state.email)) {
         this.setState({ err: "Invalid email" });
       } else {
+        document.getElementById("loginbtn").innerHTML =
+          "Taking you In, Please wait..";
         this.setState({ err: "" });
         let logininfo = {
           email: this.state.email,
@@ -52,10 +54,12 @@ class Login extends React.Component {
               sessionStorage.setItem("ltk", data.token);
               this.props.history.push("/profile");
             } else {
+              document.getElementById("loginbtn").innerHTML = "Submit";
               this.setState({ err: data.error });
             }
           })
           .catch((errors) => {
+            document.getElementById("loginbtn").innerHTML = "Submit";
             this.setState({
               err: errors.error
             });

@@ -36,6 +36,8 @@ class Register extends React.Component {
     } else if (!validator.isEmail(this.state.email)) {
       this.setState({ err: "Invalid email" });
     } else {
+      document.getElementById("loginbtn").innerHTML =
+        "Registeration in Process..";
       this.setState({ err: "" });
       const registerdetails = {
         name: this.state.name,
@@ -54,6 +56,7 @@ class Register extends React.Component {
         .then((res) => res.json())
         .then((data) => {
           if (data.register === false) {
+            document.getElementById("loginbtn").innerHTML = "Submit";
             this.setState({ err: data.error });
           } else {
             this.props.history.push("/login");

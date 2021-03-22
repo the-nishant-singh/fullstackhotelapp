@@ -124,7 +124,6 @@ class BookTicket extends React.Component {
   };
 
   submitHandler = () => {
-    console.log(this.state);
     let {
       name,
       hotel,
@@ -136,7 +135,6 @@ class BookTicket extends React.Component {
       bookeremail,
       phone
     } = this.state;
-    console.log();
     if (!name || !date || !phone) {
       this.setState({ err: "All feilds are required" });
     } else if (this.state.name.length < 3) {
@@ -144,6 +142,7 @@ class BookTicket extends React.Component {
     } else if (this.state.phone.length !== 10) {
       this.setState({ err: "Invalid phone" });
     } else {
+      document.getElementById("loginbtn").innerHTML = "Booking in Process..";
       this.setState({ err: "" });
       const book = {
         hotel,
