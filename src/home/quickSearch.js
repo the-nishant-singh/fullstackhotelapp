@@ -26,21 +26,23 @@ class QuickSearch extends React.Component {
       let data = this.state.tripType;
       return data.map((item) => {
         return (
-          <Link
-            to={`/list/${item.trip}`}
-            key={item._id}
-            style={{ color: "Black", textDecoration: "none" }}
-          >
-            <div class="card">
-              <img src={item.image} class="card-img-top" alt="..." />
-              <div class="card-body">
-                <center>
-                  <h3>{item.name}</h3>
-                  <p class="card-text">Start Your {item.name} Trip With Us</p>
-                </center>
+          <div className="col-md-6">
+            <Link
+              to={`/list/${item.trip}`}
+              key={item._id}
+              style={{ color: "Black", textDecoration: "none" }}
+            >
+              <div class="card">
+                <img src={item.image} class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <center>
+                    <h3>{item.name}</h3>
+                    <p class="card-text">Start Your {item.name} Trip With Us</p>
+                  </center>
+                </div>
               </div>
-            </div>
-          </Link>
+            </Link>
+          </div>
         );
       });
     } else if (!this.state.tripType && !this.state.err) {
@@ -56,7 +58,9 @@ class QuickSearch extends React.Component {
     return (
       <div className="container">
         <center>{this.catchError()}</center>
-        <div style={{ width: "100%" }}>{this.renderTripTypes()}</div>
+        <div className="container">
+          <div className="row">{this.renderTripTypes()}</div>
+        </div>
       </div>
     );
   }
